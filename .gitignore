@@ -1,0 +1,118 @@
+# Gradle build artifacts
+/src/.gradle/*
+.gradle/*
+**/.gradle/
+**/build/
+**/build-*
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Federation modules (as previously configured)
+src/federation-*
+
+# IDE files
+.idea/*
+.vscode/*
+*.iml
+*.ipr
+*.iws
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TAK Server runtime files
+**/logs/
+**/work/
+**/ignite/
+**/certs/
+**/temp/
+**/tmp/
+
+# TAK Server configuration files (runtime generated)
+**/CoreConfig.xml
+**/TAKIgniteConfig.xml
+**/UserAuthenticationFile.xml
+!**/CoreConfig.example.xml
+!**/TAKIgniteConfig.example.xml
+
+# Backup files
+*.backup
+*.backup[0-9]
+*.bak
+*.orig
+
+# Java/Spring Boot artifacts
+*.jar
+*.war
+*.ear
+*.class
+target/
+out/
+
+# Node.js (for takserver-tool-ui)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+*.log.*
+
+# Certificate files (security sensitive)
+*.p12
+*.pem
+*.key
+*.crt
+*.cer
+*.pfx
+*.jks
+*.keystore
+*.truststore
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.#*
+#*#
+
+# Generated source files
+**/src-generated/
+**/generated/
+**/shortver.txt
+**/ver.json
+
+# Static web content (generated)
+**/static/
+**/webcontent/
+
+# Test results
+TEST-*.xml
+**/test-results/
+**/test-output/
+
+# Docker build context
+docker-build/
+
+# Scripts and utilities (runtime generated)
+start-takserver.sh
+hash_password.java
+
+# CI/CD artifacts
+CI_ENV_VARS
+**/CI_ENV_VARS
